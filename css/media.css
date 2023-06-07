@@ -32,6 +32,10 @@
   .sect-1-h1 {
     font-size: 33px;
   }
+
+  /* .dn{
+    display: none;
+  } */
 }
 
 @media (max-width: 500px) {
