@@ -145,6 +145,11 @@ body {
   width: 594.5px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.sect-1-inner-left-tablet{
+  display: none;
 }
 
 .sect-1-inner-left {
@@ -209,25 +214,24 @@ body {
   border-bottom-left-radius: 50%;
 }
 
-.square-type-3 img,
-.square-type-4 img {
-  position: absolute;
-  width: 100% !important;
+.square-type-3 img {
+animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alternate;
 }
 
-.sect-1-inner-right .square-type-2:first-child{
+.sect-1-inner-right .square-type-2:first-of-type {
   position: relative;
   overflow: visible;
 }
 
-.sect-1-inner-right .square-type-2:first-child:before {
+.sect-1-inner-right .square-type-2:first-of-type::before {
   content: '';
   display: block;
   position: absolute;
-  background: url(/img/sect-1-star.svg) no-repeat center;
+  background: url(../img/sect-1-star.svg) no-repeat center;
+  background-size: 46px 46px;
   width: 46px;
   height: 46px;
-  transform: translate(62%,62%);
+  transform: translate(62%, 62%);
   bottom: 0;
   right: 0;
 }
@@ -262,7 +266,59 @@ body {
   margin-right: 70px;
 }
 
+.square-sticker-1 {
+  position: absolute;
+  background: #BFEDAA;
+  border-radius: 30px;
+  transform: rotate(-25.25deg);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  padding: 8px 20px;
+  top: -31px;
+  left: -15px;
+}
 
+.square-sticker-2 {
+  position: absolute;
+  background: #FFA7E6;
+  border-radius: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  text-align: center;
+  left: calc(100% / 4.5);
+  top: -46px;
+
+  color: #000000;
+  padding: 8px 20px;
+}
+
+.square-sticker-3 {
+  position: absolute;
+  padding: 8px 20px;
+  color: #000000;
+  background: #A5E4FF;
+  border-radius: 30px;
+  transform: rotate(22.3deg);
+   font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+  left: calc(100% / 2.2);
+  top: -32px;
+  text-align: center;
+}
 
 
 
@@ -278,22 +334,12 @@ body {
 }
 
 
-/* @keyframes sect-1-client-move {
+@keyframes sect-1-cup-Scale {
   0% {
-    transform: translateX(-50px);
+    transform: scale(1);
   }
 
   100% {
-    transform: translateX(-1850px);
-  }
-} */
-
-@keyframes headerLogo {
-  0% {
-    transform: translate(-50%) scale(1);
-  }
-
-  100% {
-    transform: translate(-50%) scale(1.15);
+    transform: scale(1.1);
   }
 }

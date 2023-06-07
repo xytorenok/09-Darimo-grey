@@ -2,6 +2,31 @@
 
 
 
+@media (max-width: 1150px) {
+  .square-sticker-1 {
+    font-size: 15px;
+    top: -24px;
+    left: -10px;
+  }
+
+  .square-sticker-2 {
+    font-size: 15px;
+    top: -38px;
+  }
+
+  .square-sticker-3 {
+    font-size: 15px;
+    top: -28px;
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .square-sticker-1 {
+    top: -27px;
+  }
+}
+
 @media (max-width: 1024px) {
   .header-menu-links-lang {
     display: none;
@@ -12,7 +37,106 @@
   }
 }
 
-@media (max-width: 980px) {}
+@media (max-width: 980px) {
+  :root {
+    --sect-1-square-cell-width: 24%
+  }
+
+  .sect-1-inner-left,
+  .sect-1-inner-right {
+    display: none;
+  }
+
+  .sect-1-inner-left-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+  }
+
+  .sect-1-inner-left-tablet .square-type-3,
+  .sect-1-inner-left-tablet .square-type-5 {
+    margin-right: 5px;
+  }
+
+  .square-ov-h {
+    overflow: visible;
+  }
+
+  .sect-1-inner-left-tablet .square-type-2:nth-of-type(2){
+    position: relative;
+  }
+
+  .sect-1-inner-left-tablet .square-type-2:nth-of-type(2)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../img/sect-1-star.svg) no-repeat center;
+    background-size: 46px 46px;
+    width: 46px;
+    height: 46px;
+    transform: translate(62%, 62%);
+    bottom: 0;
+    right: 0;
+  }
+
+  .square-sticker-1-tablet {
+    position: absolute;
+    background: #BFEDAA;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+    padding: 8px 20px;
+    top: -46px;
+    left: 40%;
+  }
+
+  .square-sticker-2-tablet {
+    position: absolute;
+    background: #FFA7E6;
+    border-radius: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    text-align: center;
+    left: 20%;
+    top: -46px;
+
+    color: #000000;
+    padding: 8px 20px;
+  }
+
+  .square-sticker-3-tablet {
+    position: absolute;
+    padding: 8px 20px;
+    color: #000000;
+    background: #A5E4FF;
+    border-radius: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+    left: 30%;
+    top: -46px;
+    text-align: center;
+  }
+
+
+}
 
 @media (max-width: 768px) {
   .sect-1-h1 {
@@ -22,31 +146,105 @@
   .sect-1-client {
     font-size: 25px;
   }
+
+  .sect-1-inner-right .square-type-2:first-child:before {
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
+  }
+
+  .square-sticker-1-tablet {
+    font-size: 15px;
+    padding: 6px 12px;
+    top: -37.5px;
+    left: 30%;
+  }
+
+  .square-sticker-2-tablet {
+    font-size: 15px;
+    padding: 6px 12px;
+    top: -37.5px;
+    left: 0%;
+  }
+
+  .square-sticker-3-tablet {
+    font-size: 15px;
+    padding: 6px 12px;
+    top: -37.5px;
+    left: 15%;
+  }
 }
 
 @media (max-width: 600px) {
-  :root {
-    --sect-1-square-cell-width: 31%
-  }
 
   .sect-1-h1 {
     font-size: 33px;
   }
 
-  /* .dn{
-    display: none;
-  } */
 }
 
 @media (max-width: 500px) {
+  :root {
+    --sect-1-square-cell-width: 32%;
+  }
+
+  .section-1 {
+    padding: 24px 0 120px;
+  }
+
   .sect-1-h1 {
     font-size: 26px;
+  }
+
+  .sect-1-wrapper {
+    margin-top: 71px;
+  }
+
+  .sect-1-inner-left-tablet {
+    display: none;
+  }
+
+  .sect-1-inner-right {
+    display: flex;
+  }
+
+  .square-sticker-1 {
+    font-size: 12px;
+    padding: 6px 12px;
+    top: -20px;
+    left: 0px;
+  }
+
+  .square-sticker-2 {
+    font-size: 12px;
+    padding: 6px 12px;
+    top: -30px
+  }
+
+  .square-sticker-3 {
+    font-size: 12px;
+    padding: 6px 12px;
+    top: -23px;
+  }
+}
+
+@media (max-width: 450px) {
+  .square-sticker-1 {
+    top: -22px
   }
 }
 
 @media (max-width: 400px) {
   .sect-1-h1 {
     font-size: 24px;
+  }
+
+  .square-sticker-1 {
+    top: -25px;
+  }
+
+  .square-sticker-3 {
+    top: -21px;
   }
 }
 
