@@ -5,6 +5,10 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Montserrat', sans-serif;
  */
 
+:root {
+  --sect-1-square-cell-width: 32%
+}
+
 body {
   background-color: #F6F6F6;
 }
@@ -28,6 +32,8 @@ body {
 
 .header {
   padding: 30px 20px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-wrapper {
@@ -129,6 +135,7 @@ body {
 
 .sect-1-wrapper {
   margin-top: 110px;
+  margin-bottom: 100px;
   display: flex;
   gap: 5px
 }
@@ -140,11 +147,19 @@ body {
   flex-wrap: wrap;
 }
 
+.sect-1-inner-left {
+  justify-content: flex-end;
+}
+
+.sect-1-inner-right {
+  justify-content: flex-start;
+}
+
 .square-1-cell {
   position: relative;
   overflow: hidden;
   max-width: 194.8px;
-  width: calc(33.3% - 3.3px);
+  width: var(--sect-1-square-cell-width);
   /* height: 184px; */
   border: 3px solid #636363;
   aspect-ratio: 1.0543
@@ -154,7 +169,7 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 394.6px;
-  width: calc(66.6% - 3.3px);
+  width: calc(var(--sect-1-square-cell-width) * 2 + 5px);
   /* height: 184px; */
   border: 3px solid #636363;
   aspect-ratio: 2.1424;
@@ -184,8 +199,8 @@ body {
 }
 
 .square-type-4 {
-  border-top-left-radius: 97.4px;
-  border-bottom-right-radius: 97.4px;
+  border-top-left-radius: 25% 50%;
+  border-bottom-right-radius: 25% 50%;
 }
 
 .square-type-5 {
@@ -194,18 +209,40 @@ body {
   border-bottom-left-radius: 50%;
 }
 
-
 .square-type-3 img,
 .square-type-4 img {
   position: absolute;
   width: 100% !important;
 }
 
-.sect-1-clients-line {
+.sect-1-inner-right .square-type-2:first-child{
+  position: relative;
+  overflow: visible;
+}
+
+.sect-1-inner-right .square-type-2:first-child:before {
+  content: '';
+  display: block;
   position: absolute;
-  display: flex;
-  width: 500%;
+  background: url(/img/sect-1-star.svg) no-repeat center;
+  width: 46px;
+  height: 46px;
+  transform: translate(62%,62%);
   bottom: 0;
+  right: 0;
+}
+
+
+.sect-1-clients-line-visible {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.sect-1-clients-line {
+  display: flex;
+  width: 1000%;
   transform: translateX(-50px);
   animation: sect-1-client-move 50000ms linear infinite alternate;
 }
@@ -215,7 +252,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
-  line-height: 64px;
+  line-height: 1.8;
   text-align: center;
   color: #E3E3E3;
 }
@@ -239,6 +276,17 @@ body {
     transform: translateX(-1850px);
   }
 }
+
+
+/* @keyframes sect-1-client-move {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(-1850px);
+  }
+} */
 
 @keyframes headerLogo {
   0% {
