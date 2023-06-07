@@ -135,9 +135,6 @@ body {
 .sect-1-inner-right {
   width: 594.5px;
   display: flex;
-  justify-content: space-between;
-  /* протестировать gap на устройствах */
-  /* gap: 5px; */
   flex-wrap: wrap;
 }
 
@@ -145,7 +142,7 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 194.8px;
-  width: 33.3%;
+  width: calc(33.3% - 3.3px);
   /* height: 184px; */
   border: 3px solid #636363;
   aspect-ratio: 1.0543
@@ -155,13 +152,17 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 394.6px;
-  width: 66.6%;
+  width: calc(66.6% - 3.3px);
   /* height: 184px; */
   border: 3px solid #636363;
   aspect-ratio: 2.1424;
 }
 
-.square-2-row {
+.square-mr{
+  margin-right: 5px;
+}
+
+.square-mt {
   margin-top: 5px;
 }
 
