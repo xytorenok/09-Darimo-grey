@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <div class="wrapper-overflow">
   <header class="header">
     <div class="header-wrapper">
       <div class="header-logo">
@@ -22,7 +23,7 @@
         <nav>
           <ul class="header-list">
             <li class="header-item">
-              <a href="" class="header-link">Про нас</a>
+              <a href="#about" class="header-link">Про нас</a>
             </li>
             <li class="header-item">
               <a href="" class="header-link">Чому ми </a>
@@ -60,28 +61,50 @@
     </div>
   </header>
   <div class="header-gradient"></div>
-  <div class="curtain"></div>
+  <div class="curtain">
+    <ul class="curtain-list">
+      <li class="curtain-item">
+        <a href="#about" class="curtain-link">Про нас</a>
+      </li>
+      <li class="curtain-item">
+        <a href="" class="curtain-link">Чому ми </a>
+      </li>
+      <li class="curtain-item">
+        <a href="" class="curtain-link">Кейси</a>
+      </li>
+      <li class="curtain-item">
+        <a href="" class="curtain-link">Умови роботи</a>
+      </li>
+      <li class="curtain-item">
+        <a href="" class="curtain-link">Контакти</a>
+      </li>
+      <li class="curtain-item">
+        <button class="btn curtain-btn">Замовити</button>
+      </li>
+    </ul>
+  </nav>
+  </div>
 
   <section class="section-1">
     <h1 class="sect-1-h1">Cтворюємо оригінальні корпоративні подарунки</h1>
     <div class="sect-1-wrapper container">
       <div class="sect-1-inner-left">
-        <div class="square-type-1 square-1-cell square-mr dn"></div>
-        <div class="square-type-2 square-1-cell square-mr dn"></div>
+        <div class="square-type-1 square-1-cell square-mr "></div>
+        <div class="square-type-2 square-1-cell square-mr "></div>
         <div class="square-type-3 square-1-cell"><img src="img/sect-1-cup.png" alt=""></div>
-        <div class="square-type-4 square-2-cells square-mt square-mr dn"><img src="img/sect-1-bottle.png" alt=""></div>
+        <div class="square-type-4 square-2-cells square-mt square-mr"><img src="img/sect-1-bottle.png" alt=""></div>
         <div class="square-type-5 square-1-cell square-mt"></div>
       </div>
       <div class="sect-1-inner-left-tablet">
-        <div class="square-type-3 square-1-cell"><img src="img/sect-1-cup.png" alt=""></div>
-        <div class="square-type-2 square-1-cell square-mr square-ov-h"><span
+        <div class="square-type-3 square-1-cell  square-zi"><img src="img/sect-1-cup.png" alt=""></div>
+        <div class="square-type-2 square-1-cell square-mr square-ov-h  square-zi"><span
             class="square-sticker-1-tablet">Якісно</span></div>
         <div class="square-type-1 square-1-cell square-mr square-ov-h"><span
             class="square-sticker-2-tablet">Швидко</span></div>
         <div class="square-type-2 square-1-cell square-ov-h"><span class="square-sticker-3-tablet">Креативно</span>
         </div>
-        <div class="square-type-5 square-1-cell square-mt"></div>
-        <div class="square-type-1 square-1-cell square-mt square-mr"></div>
+        <div class="square-type-5 square-1-cell square-mt  square-zi"></div>
+        <div class="square-type-1 square-1-cell square-mt square-mr  square-zi"></div>
         <div class="square-type-4 square-2-cells square-mt"><img src="img/sect-1-book.png" alt=""></div>
       </div>
 
@@ -90,10 +113,10 @@
         <span class="square-sticker-2">Швидко</span>
         <span class="square-sticker-3">Креативно</span>
 
-        <div class="square-type-2 square-1-cell square-mr"></div>
-        <div class="square-type-1 square-1-cell square-mr"></div>
+        <div class="square-type-2 square-1-cell square-mr square-zi"></div>
+        <div class="square-type-1 square-1-cell square-mr square-zi"></div>
         <div class="square-type-2 square-1-cell"></div>
-        <div class="square-type-1 square-1-cell square-mt square-mr"></div>
+        <div class="square-type-1 square-1-cell square-mt square-mr square-zi"></div>
         <div class="square-type-4 square-2-cells square-mt"><img src="img/sect-1-book.png" alt=""></div>
       </div>
     </div>
@@ -121,7 +144,7 @@
 
   </section>
 
-  <section class="section-2">
+  <section class="section-2" id="about">
     <div class="sect-2-wrapper">
       <h2 class="sect-2-h2 h2-common">Про нас</h2>
       <p class="sect-2-text">Darimo — це команда людей <span class="sect-2-faces"><img src="img/sext-2-faces.png"
@@ -130,7 +153,7 @@
         подарунків, які вражають та запам'ятовуються надовго.</p>
     </div>
   </section>
-
+</div>
 </body>
 
 </html>
