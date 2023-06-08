@@ -19,6 +19,18 @@ body {
   padding: 0 20px;
 }
 
+.h2-common {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 563;
+  font-size: 60px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: -0.035em;
+  font-feature-settings: 'rclt' off, 'liga' off, 'kern' off;
+  color: #0C0C0D;
+}
+
 /* -------------------------------------  */
 
 .header-gradient {
@@ -113,7 +125,7 @@ body {
 /* ------------------------section-1-------------------- */
 
 .section-1 {
-  padding: 60px 0 180px;
+  padding: 60px 0 150px;
   overflow: hidden;
   position: relative;
 }
@@ -148,7 +160,7 @@ body {
   position: relative;
 }
 
-.sect-1-inner-left-tablet{
+.sect-1-inner-left-tablet {
   display: none;
 }
 
@@ -215,7 +227,7 @@ body {
 }
 
 .square-type-3 img {
-animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alternate;
+  animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alternate;
 }
 
 .sect-1-inner-right .square-type-2:first-of-type {
@@ -309,7 +321,7 @@ animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alt
   background: #A5E4FF;
   border-radius: 30px;
   transform: rotate(22.3deg);
-   font-family: 'Inter';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -321,6 +333,39 @@ animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alt
 }
 
 
+/* -----------------------------------------section-2------------------------ */
+
+.section-2{
+  padding-bottom: 50px;
+}
+
+.sect-2-wrapper {
+  max-width: 945px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sect-2-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  margin-top: 35px;
+}
+
+.sect-2-faces {
+  display: inline-block;
+}
+
+span.sect-2-sticker {
+  display: inline-block;
+  background: #FDFF8A;
+  border-radius: 30px;
+  padding: 0 5px 0 13px;
+}
 
 
 @keyframes sect-1-client-move {
