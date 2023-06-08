@@ -34,7 +34,7 @@
 
   /* ---------------------common--------------------- */
 
-  .header-menu-links-lang {
+  .header-btn {
     display: none;
   }
 
@@ -164,6 +164,16 @@
 
   /* ---------------------common--------------------- */
 
+  .header-menu-links-lang{
+    display: none;
+  }
+
+  .humburger{
+    display: inline-block;
+  }
+
+  /* ------------section-1------- */
+
   .sect-1-h1 {
     font-size: 39px;
   }
@@ -225,6 +235,10 @@
     font-size: 33px;
   }
 
+  .sect-1-client {
+    font-size: 20px;
+  }
+
   /* ---------------section-2----------- */
   .sect-2-wrapper {
     max-width: 490px;
@@ -247,9 +261,9 @@
 
   .h2-common {
     font-size: 28px;
-}
+  }
 
-/* ----------------common---------------------- */
+  /* ----------------common---------------------- */
 
   .section-1 {
     padding: 24px 0 120px;
@@ -326,6 +340,19 @@
 }
 
 @media (max-width: 400px) {
+
+  .square-1-cell,
+  .square-2-cells {
+    border: 1px solid #636363;
+  }
+
+  .sect-1-inner-right .square-type-2:first-of-type::before {
+    background: url(../img/sect-1-star-mobile.svg) no-repeat center;
+    background-size: 36px 36px;
+    width: 36px;
+    height: 36px;
+  }
+
   .sect-1-h1 {
     font-size: 24px;
   }
@@ -335,7 +362,7 @@
   }
 
   .square-sticker-3 {
-    top: -21px;
+    top: -23px;
   }
 
   /* -----------section-2------------- */
@@ -343,5 +370,34 @@
     max-width: 340px;
   }
 }
+
+@media (max-width: 390px) {
+  .square-sticker-1 {
+    top: -26.4px;
+  }
+}
+
+@media (max-width: 370px) {
+  .square-sticker-1 {
+    top: -27.3px;
+  }
+
+  .square-sticker-3 {
+    top: -22px;
+  }
+}
+
+@media (max-width: 355px) {
+  .square-sticker-1 {
+    top: -28.3px;
+  }
+}
+
+@media (max-width: 340px) {
+  .square-sticker-1 {
+    top: -29.3px;
+  }
+}
+
 
 @media (max-width: 360px) {}
