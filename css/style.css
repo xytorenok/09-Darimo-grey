@@ -716,7 +716,7 @@ span.sect-2-sticker {
 /* ----------section-7------------- */
 
 .section-7{
-  padding: 180px 0 180px;
+  padding-bottom: 180px;
 }
 
 .sect-7-wrapper-relative{
@@ -744,6 +744,16 @@ span.sect-2-sticker {
 
 .sect-7-inner:nth-of-type(2){
   margin: 30px 0;
+}
+
+.sect-7-wrapper {
+  filter: grayscale(100%);
+  transition: 2000ms;
+}
+
+.sect-7-wrapper:hover{
+  filter: grayscale(30%);
+  transition: 300ms;
 }
 
 .sect-7-block-text{
