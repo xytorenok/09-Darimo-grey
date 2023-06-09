@@ -734,7 +734,7 @@ span.sect-2-sticker {
   width: 1806px;
   margin: 0 auto;
   position: absolute;
-  left: -256px;
+  transform: translateX(-256px);
 }
 
 .sect-7-inner{
@@ -749,6 +749,7 @@ span.sect-2-sticker {
 .sect-7-wrapper {
   filter: grayscale(100%);
   transition: 2000ms;
+  animation: sect-7-move 20000ms linear infinite alternate;
 }
 
 .sect-7-wrapper:hover{
@@ -782,6 +783,16 @@ span.sect-2-sticker {
 
   100% {
     transform: scale(1.1);
+  }
+}
+
+@keyframes sect-7-move {
+  0% {
+    transform: translateX(-256px);
+  }
+
+  100% {
+    transform: translateX(-380px);
   }
 }
 
