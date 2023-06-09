@@ -537,4 +537,17 @@
 }
 
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+
+  .sect-3-block-sticker:nth-of-type(5) {
+    left: 54%;
+  }
+
+  .sect-3-block-sticker:nth-of-type(10) {
+    left: 63%;
+  }
+
+  .sect-3-block-sticker:nth-of-type(11) {
+    display: none;
+  }
+}
