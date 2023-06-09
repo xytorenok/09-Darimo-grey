@@ -37,24 +37,38 @@
   .square-sticker-1 {
     top: -27px;
   }
-/* ----------------section-3--------- */
 
-.sect-3-block-sticker {
-  padding: 8px 12px;
+  /* ----------------section-3--------- */
+
+  .sect-3-block-sticker {
+    padding: 8px 12px;
+    font-size: 19px;
+  }
+
+  .sect-3-block-sticker:nth-of-type(3) {
+    top: -90px;
+    left: 23.5%;
+    transform: rotate(0deg);
+  }
+
+  .sect-3-block-sticker:nth-of-type(4) {
+    display: none;
+  }
+
+  .sect-3-block-sticker:nth-of-type(5) {
+    top: -45px;
+    left: 36%;
 }
 
-.sect-3-block-sticker:nth-of-type(3) {
-  top: -92px;
-  left: 23.5%;
-  transform: rotate(0deg);
-}
+  .sect-3-block-sticker:nth-of-type(6) {
+    top: -90px;
+  }
 
-.sect-3-block-sticker:nth-of-type(4) {
-  top: -66px;
-  left: 13%;
-  transform: rotate(270deg);
-}
-
+  .sect-3-block-sticker:nth-of-type(9) {
+    top: -90px;
+    left: 72%;
+    transform: rotate(14deg);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -193,6 +207,18 @@
     width: calc(50% - 10px);
   }
 
+  .sect-3-block-sticker:nth-of-type(8) {
+    top: -123px;
+    left: 61%;
+    transform: rotate(90deg);
+}
+
+  .sect-3-block-sticker:nth-of-type(9) {
+    top: -90px;
+    left: 75%;
+    transform: rotate(0deg);
+  }
+
 
 }
 
@@ -260,6 +286,20 @@
   .sect-2-text {
     font-size: 23px;
   }
+
+  /* -----------------section-3------------------ */
+
+  .sect-3-block-sticker:first-of-type,
+  .sect-3-block-sticker:nth-of-type(6),
+  .sect-3-block-sticker:nth-of-type(7),
+  .sect-3-block-sticker:nth-of-type(8),
+  .sect-3-block-sticker:nth-of-type(9){
+    display: none;
+  }
+
+  .sect-3-block-sticker:nth-of-type(4){
+    display: block;
+  }
 }
 
 @media (max-width: 650px) {
@@ -269,7 +309,7 @@
 
   .sect-3-h2 {
     margin-bottom: 128px;
-}
+  }
 
   .sect-3-block {
     width: 100%;
