@@ -121,6 +121,10 @@
 
   /* ------------sect-6------------- */
 
+    .section-6 {
+      padding: 90px 0 90px;
+  }
+
   .sect-6-wrapper {
     height: 600px;
   }
@@ -443,6 +447,10 @@
   }
 
   /* ----------------section-6---------------- */
+
+  .section-6 {
+    padding: 64px 0 64px;
+}
 
   .sect-6-h2 {
     margin-bottom: 167px;
