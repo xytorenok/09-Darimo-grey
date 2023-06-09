@@ -246,6 +246,11 @@ body {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
 }
+/* тестовая анимация */
+
+.sect-1-inner-left .square-type-4 img{
+  animation: sect-1-cup-Scale 8000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alternate;
+}
 
 .square-type-3 img {
   animation: sect-1-cup-Scale 5000ms cubic-bezier(0, 0.27, 0.8, 1.14) infinite alternate;
