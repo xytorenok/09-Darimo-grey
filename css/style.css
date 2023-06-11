@@ -6,18 +6,16 @@ font-family: 'Montserrat', sans-serif;
  */
 
 :root {
-  --sect-1-square-cell-width: 32%
+  --max-width-html: 1440px;
+  --sect-1-square-cell-width: 32%;
+  --sect-7-cell-width: 276px;
+  --sect-7-cell-height: 310px;
+  --sect-7-cell-margin: 30px;
 }
 
 body {
   background-color: #F6F6F6;
 
-}
-
-.wrapper-overflow {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
 
 .container {
@@ -71,7 +69,7 @@ body {
 
 .header {
   padding: 30px 20px 0;
-  max-width: 1440px;
+  max-width: var(--max-width-html);
   margin: 0 auto;
 }
 
@@ -283,7 +281,7 @@ body {
 
 
 .sect-1-clients-line-visible {
-  max-width: 1440px;
+  max-width: var(--max-width-html);
   margin: 0 auto;
   overflow: hidden;
 }
@@ -422,7 +420,6 @@ span.sect-2-sticker {
 
 .sect-3-block {
   width: calc(33.3% - 20px);
-  min-width: 299px;
   padding: 30px;
   background: #FFFFFF;
   border-radius: 30px;
@@ -536,6 +533,8 @@ span.sect-2-sticker {
 
 .section-4 {
   padding: 150px 0 180px;
+  max-width: var(--max-width-html);
+  margin: 0 auto;
 }
 
 .sect-4-text {
@@ -580,7 +579,7 @@ span.sect-2-sticker {
   padding: 180px 0 180px;
 }
 
-.sect-6-wrapper-h2{
+.sect-6-wrapper-h2 {
   position: relative;
 }
 
@@ -640,7 +639,7 @@ span.sect-2-sticker {
 
 .sect-6-block:first-of-type,
 .sect-6-block:nth-of-type(2),
-.sect-6-block:nth-of-type(3){
+.sect-6-block:nth-of-type(3) {
   margin-right: 30px;
 }
 
@@ -715,14 +714,14 @@ span.sect-2-sticker {
 
 /* ----------section-7------------- */
 
-.section-7{
+.section-7 {
   padding-bottom: 180px;
 }
 
-.sect-7-wrapper-relative{
+.sect-7-wrapper-relative {
   position: relative;
-  height: 990px;
-  max-width: 1440px;
+  height: calc(var(--sect-7-cell-height) * 3 + var(--sect-7-cell-margin) * 2);
+  max-width: var(--max-width-html);
   overflow: hidden;
   margin: 0 auto;
 }
@@ -731,37 +730,130 @@ span.sect-2-sticker {
 .sect-7-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1806px;
   margin: 0 auto;
   position: absolute;
-  transform: translateX(-256px);
-}
-
-.sect-7-inner{
-  display: flex;
-  justify-content: space-between;
-}
-
-.sect-7-inner:nth-of-type(2){
-  margin: 30px 0;
-}
-
-.sect-7-wrapper {
+  transform: translateX(-14%);
   filter: grayscale(100%);
   transition: 2000ms;
-  animation: sect-7-move 20000ms linear infinite alternate;
 }
 
-.sect-7-wrapper:hover{
+.sect-7-wrapper:hover {
   filter: grayscale(30%);
   transition: 300ms;
 }
 
-.sect-7-block-text{
-  width: 582px;
+.sect-7-inner {
+  display: flex;
+}
+
+.sect-7-inner:first-of-type,
+.sect-7-inner:last-of-type {
+  animation: sect-7-move2 3000ms linear infinite alternate;
+}
+
+.sect-7-inner:nth-of-type(2) {
+  margin-top: var(--sect-7-cell-margin);
+  margin-bottom: var(--sect-7-cell-margin);
+}
+
+.sect-7-block {
+  margin-right: var(--sect-7-cell-margin);
+}
+
+.sect-7-block-text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sect-7-block:not(.sect-7-2-cells) {
+  width: var(--sect-7-cell-width);
+  height: var(--sect-7-cell-height);
+}
+
+.sect-7-2-cells {
+  width: calc(var(--sect-7-cell-width) * 2 + var(--sect-7-cell-margin));
+  height: var(--sect-7-cell-height);
+}
+
+
+/* ----------section-8------------- */
+
+.section-8 {
+  height: 70vh;
+  overflow: hidden;
+}
+
+.sect-8-wrapper-relative {
+  max-width: var(--max-width-html);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sect-8-slider-wrapper {
+  max-width: 722px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sect-8-slider-line {
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+.sect-8-slide {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+}
+
+.sect-8-inner-block {
+  padding: 50px 55px 0;
+  height: 524px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+
+.sect-8-inner-comment {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  margin: 30px 0 40px;
+}
+
+/* добавитьобщую переменную для текста в єтом блоке */
+
+.sect-8-inner-name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+}
+
+.sect-8-inner-position {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  text-align: center;
+  color: #949494;
+  margin: 10px 0 19px;
+  width: 183px;
 }
 
 
@@ -786,13 +878,24 @@ span.sect-2-sticker {
   }
 }
 
+/* delete one of keyframeses */
 @keyframes sect-7-move {
   0% {
-    transform: translateX(-256px);
+    transform: translateX(-14%);
   }
 
   100% {
-    transform: translateX(-380px);
+    transform: translateX(-24%);
+  }
+}
+
+@keyframes sect-7-move2 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-7%);
   }
 }
 
@@ -923,7 +1026,7 @@ body.overflow {
 
 
 .sect-1-clients-line-visible.open {
-  max-width: 1440px;
+  max-width: var(--max-width-html);
   margin: 0 auto;
   overflow: hidden;
   position: relative;
