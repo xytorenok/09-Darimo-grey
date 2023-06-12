@@ -928,15 +928,14 @@
   .footer-authors-item {
     margin-bottom: 10px;
     position: relative;
-    
   }
 
-  .footer-authors-item:last-of-type:hover .footer-andrew{
+  .footer-authors-item:last-of-type:hover .footer-andrew {
     transform: translateY(-100%);
     transition: 1000ms;
   }
 
-  .footer-andrew{
+  .footer-andrew {
     position: absolute;
     top: 0;
     transform: translateY(40%);
