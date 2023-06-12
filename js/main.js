@@ -68,9 +68,6 @@ function init() {
 
 }
 
-
-
-
 sliderBtnPrev.onclick = () => {
   count--
   if (count < 0) {
@@ -92,3 +89,19 @@ sliderBtnNext.onclick = () => {
 function rollSlider() {
   sliderLine.style.transform = `translate(-${count * width}px)`
 }
+
+
+// -------------------section-9--------------------
+
+
+const faqPlus = document.querySelectorAll('.sect-9-block-plus');
+
+faqPlus.forEach(button => {
+  button.addEventListener('click', () => {
+    console.log('press')
+    const answer = button.parentNode.nextElementSibling;
+    answer.classList.toggle('visible');
+    button.classList.toggle('rotate');
+
+  });
+});

@@ -15,7 +15,7 @@ font-family: 'Montserrat', sans-serif;
 
 body {
   background-color: #F6F6F6;
-
+  overflow-x: hidden;
 }
 
 .container {
@@ -54,6 +54,21 @@ body {
   letter-spacing: -0.035em;
   font-feature-settings: 'rclt' off, 'liga' off, 'kern' off;
   color: #0C0C0D;
+}
+
+.block-sticker-common {
+  display: block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+  position: absolute;
+  z-index: -1;
 }
 
 /* -------------------------------------  */
@@ -405,6 +420,9 @@ span.sect-2-sticker {
 }
 
 /* -------------section-3--------------------------- */
+.section-3 {
+  overflow: hidden;
+}
 
 .sect-3-h2 {
   max-width: 510px;
@@ -451,22 +469,6 @@ span.sect-2-sticker {
   font-size: 14px;
   line-height: 1.5;
   color: #737373;
-}
-
-
-.sect-3-block-sticker {
-  display: block;
-  padding: 8px 20px;
-  border-radius: 30px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #000000;
-  position: absolute;
-  z-index: -1;
 }
 
 .sect-3-block-sticker:first-of-type {
@@ -780,8 +782,14 @@ span.sect-2-sticker {
 /* ----------section-8------------- */
 
 .section-8 {
-  height: 70vh;
-  overflow: hidden;
+  padding: 180px 0 180px;
+  position: relative;
+  background: #E8ECEF;
+}
+
+.sect-8-h2 {
+  max-width: 670px;
+  margin-bottom: 76px;
 }
 
 .sect-8-wrapper-relative {
@@ -800,6 +808,7 @@ span.sect-2-sticker {
   display: flex;
   position: relative;
   left: 0;
+  transition: 700ms;
 }
 
 .sect-8-slide {
@@ -820,7 +829,6 @@ span.sect-2-sticker {
   border-radius: 30px;
 }
 
-
 .sect-8-inner-comment {
   font-family: 'Inter';
   font-style: normal;
@@ -831,8 +839,6 @@ span.sect-2-sticker {
   color: #000000;
   margin: 30px 0 40px;
 }
-
-/* добавитьобщую переменную для текста в єтом блоке */
 
 .sect-8-inner-name {
   font-family: 'Inter';
@@ -854,6 +860,159 @@ span.sect-2-sticker {
   color: #949494;
   margin: 10px 0 19px;
   width: 183px;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 182px;
+  margin: 40px auto 115px;
+}
+
+.slider-button {
+  width: 56px;
+  height: 56px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.sect-8-clients-line-visible {
+  max-width: var(--max-width-html);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sect-8-clients-line {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  transform: translateX(-50px);
+  animation: sect-1-client-move 30000ms linear infinite alternate;
+}
+
+.sect-8-client {
+  margin-right: 135px;
+}
+
+/* ----------section-9------------- */
+
+.section-9 {
+  padding: 180px 0 180px;
+  overflow: hidden;
+}
+
+.sect-9-wrapper-h2 {
+  margin-bottom: 120px;
+}
+
+
+.sect-9-wrapper {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.sect-9-block-sticker:first-of-type {
+  transform: rotate(-68.82deg);
+  left: -100px;
+  top: 100px;
+}
+
+.sect-9-block-sticker:nth-of-type(2) {
+  transform: rotate(-37.44deg);
+  top: -46px;
+  left: -68px;
+}
+
+.sect-9-block-sticker:nth-of-type(3) {
+  top: -46px;
+  left: 80px;
+}
+
+.sect-9-block-sticker:nth-of-type(4) {
+  top: -46px;
+  right: 50px;
+}
+
+.sect-9-block-sticker:last-of-type {
+  right: -10px;
+  top: -41px;
+  transform: rotate(33.58deg);
+}
+
+.sect-9-block {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 26px 30px 26px 30px;
+  margin-bottom: 29px;
+  transition: 1000ms;
+}
+
+.sect-9-block-question-text {
+  position: relative;
+}
+
+.sect-9-block-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #000000;
+  padding-right: 50px;
+}
+
+.sect-9-block-plus {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 700ms;
+  transform-origin: center;
+
+}
+
+.sect-9-block-plus.rotate {
+  transform: translateY(-50%) rotate(45deg);
+  transition: 700ms;
+  background-color: #FF7171;
+  border-radius: 50%;
+  padding: 5px;
+
+}
+
+.sect-9-block-answer {
+  margin-top: 32px;
+  display: none;
+}
+
+.sect-9-block-answer.visible {
+  display: block;
+}
+
+
+.sect-9-block-answer-text,
+.sect-9-block-answer ul {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #737373;
+  margin-bottom: 18px;
+}
+
+.sect-9-block-answer li{
+  margin-left: 15px;
+  margin-bottom: 3px;
 }
 
 
