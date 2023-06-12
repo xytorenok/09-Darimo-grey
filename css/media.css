@@ -383,11 +383,13 @@
   .sect-10-label,
   .sect-10-label:last-of-type {
     width: 100%;
-    margin-bottom: 24px;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 
   .sect-10-input {
     padding: 16px 12px;
+    margin-top: 10px;
   }
 
   /* -------------------section-11------------------ */
