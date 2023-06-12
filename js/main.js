@@ -105,3 +105,15 @@ faqPlus.forEach(button => {
 
   });
 });
+
+
+
+// ---------------footer------------
+
+andrew.addEventListener("click", function(e){
+  e.preventDefault()
+
+  setTimeout(function() {
+    window.location.href = e.target.href
+  }, 1000)
+})
