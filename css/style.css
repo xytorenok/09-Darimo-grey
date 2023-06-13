@@ -214,7 +214,8 @@ body {
   width: var(--sect-1-square-cell-width);
   /* height: 184px; */
   border: 3px solid #636363;
-  aspect-ratio: 1.0543
+  aspect-ratio: 1.0543;
+  isolation: isolate;
 }
 
 .square-2-cells {
