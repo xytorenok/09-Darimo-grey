@@ -736,13 +736,7 @@ span.sect-2-sticker {
   margin: 0 auto;
   position: absolute;
   transform: translateX(-14%);
-  filter: grayscale(100%);
-  transition: 2000ms;
-}
 
-.sect-7-wrapper:hover {
-  filter: grayscale(30%);
-  transition: 300ms;
 }
 
 .sect-7-inner {
@@ -761,6 +755,13 @@ span.sect-2-sticker {
 
 .sect-7-block {
   margin-right: var(--sect-7-cell-margin);
+  filter: grayscale(100%);
+  transition: 5000ms;
+}
+
+.sect-7-block:hover {
+  filter: grayscale(1%);
+  transition: 200ms;
 }
 
 .sect-7-block-text {
@@ -895,7 +896,7 @@ span.sect-2-sticker {
 }
 
 .sect-8-client {
-  margin-right: 135px;
+  margin-right: 115px;
 }
 
 /* ----------section-9------------- */
@@ -1201,7 +1202,7 @@ h2.footer-h2.h2-common {
   max-width: 116px;
 }
 
-.footer-authors-list-mobile{
+.footer-authors-list-mobile {
   display: none;
 }
 
