@@ -65,7 +65,6 @@ function init() {
   // вібор стартового слайда
   sliderLine.style.transform = `translate(-${1 * width}px)`
   // rollSlider()
-
 }
 
 sliderBtnPrev.onclick = () => {
@@ -94,7 +93,7 @@ function rollSlider() {
 // -------------------section-9--------------------
 
 
-const faqPlus = document.querySelectorAll('.sect-9-block-plus');
+const faqPlus = document.querySelectorAll('.sect-9-block-plus')
 
 faqPlus.forEach(button => {
   button.addEventListener('click', () => {
@@ -108,12 +107,58 @@ faqPlus.forEach(button => {
 
 
 
+// ----------------section-10---------------------
+
+const form = document.querySelector('.sect-10-form')
+const submit = document.querySelector('.sect-10-submit')
+
+form.onchange = validate
+
+
+function validate(e) {
+  if (!e.target.required) return
+
+
+  if (e.target == form.phone) {
+        if (!/^\+?\d{10,15}$/.test(e.target.value)) {
+      e.target.parentNode.classList.add('invalid')
+      submit.classList.add('disabled')
+    } else {
+      e.target.parentNode.classList.remove('invalid')
+      submit.classList.remove('disabled')
+    }
+    }
+
+  // if (e.target == form.name) {
+  //   // длинная запись
+  //   // if (e.target.value.length < 2) {
+  //   //   e.target.classList.add('invalid')
+  //   // } else {
+  //   //   e.target.classList.remove('invalid')
+  //   // }
+
+  //   // короткая запись
+  //   e.target.classList.toggle('invalid', e.target.value.length < 2)
+  
+  // }
+  //  else if (e.target == form.phone) {
+  //   e.target.classList.toggle('invalid', !/^(\+\d{0,5})?\d{10}$/.test(e.target.value) )
+
+  // } else if (e.target == form.email) {
+  //   console.log('email')
+  // } else if (e.target == form.message) {
+  //   console.log('message')
+  // }
+
+  
+}
+
 // ---------------footer------------
 
-andrew.addEventListener("click", function(e){
+andrew.addEventListener("click", function (e) {
   e.preventDefault()
 
-  setTimeout(function() {
+  setTimeout(function () {
     window.location.href = e.target.href
   }, 1000)
 })

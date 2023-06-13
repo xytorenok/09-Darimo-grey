@@ -392,6 +392,10 @@
     margin-top: 10px;
   }
 
+  #sect-10-phone-label input{
+    padding: 15px 12px;
+  }
+
   /* -------------------section-11------------------ */
 
   .sect-11-map-adress {

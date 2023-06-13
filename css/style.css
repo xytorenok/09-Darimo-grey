@@ -892,7 +892,7 @@ span.sect-2-sticker {
   align-items: center;
   width: max-content;
   transform: translateX(-50px);
-  animation: sect-1-client-move 30000ms linear infinite alternate;
+  animation: sect-1-client-move 70000ms linear infinite alternate;
 }
 
 .sect-8-client {
@@ -1083,11 +1083,41 @@ span.sect-2-sticker {
   color: #E1E1E1;
 }
 
+#sect-10-phone-label {
+  position: relative;
+}
+
+#sect-10-phone-label input {
+  border: 1px solid transparent;
+  padding: 19px 25px;
+  transition: 500ms;
+}
+
+#sect-10-phone-label.invalid input {
+  border: 1px solid #D11E1E;
+  transition: 500ms;
+}
+
+#sect-10-phone-label.invalid::before {
+  content: 'Невірно вказаний номер телефону';
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -18px;
+  left: 12px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #D11E1E;
+}
+
 .sect-10-block-submit {
   width: 100%;
 }
 
-button.sect-10-submit {
+.sect-10-submit {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -1102,6 +1132,10 @@ button.sect-10-submit {
   padding: 23px 35px;
   display: block;
   margin: 0 auto;
+}
+
+.sect-10-submit.disabled {
+  background: #D7D7D7;
 }
 
 /* ----------section-11------------- */

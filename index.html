@@ -217,7 +217,7 @@
     <h2 class="h2-common" style="color:#D4B1FF">секция слайдер в разработке</р>
   </section>
 
-  <section class="section-6">
+  <section class="section-6"  id="conditions">
     <div class="sect-6-wrapper-h2">
       <h2 class="sect-6-h2 h2-common">Як ми працюємо</h2>
       <span class="sect-6-sticker-center">4 простих кроки</span>
@@ -427,7 +427,7 @@
 
   </section>
 
-  <section class="section-9" id="conditions">
+  <section class="section-9">
     <div class="sect-9-wrapper-h2">
       <h2 class="sect-9-h2 h2-common">Залишились питання?</h2>
     </div>
@@ -713,19 +713,19 @@
           <h2 class="sect-10-h2 h2-common">Обговоримо ваш<br>проєкт?</h2>
         </div>
         <form action="javascript:" class="sect-10-form">
-          <label class="sect-10-label">Ваше імʼя<span> *</span><input class="sect-10-input" type="text" name="initial"
+          <label class="sect-10-label">Ваше імʼя<input class="sect-10-input" type="text" name="name"
               placeholder="Лариса"></label>
-          <label class="sect-10-label">Назва компанії<input class="sect-10-input" type="text" name="initial"
+          <label class="sect-10-label">Назва компанії<input class="sect-10-input" type="text" name="company"
               placeholder="Darimo"></label>
-          <label class="sect-10-label">Номер телефону<span> *</span><input class="sect-10-input" type="tel" name="name"
-              placeholder="+380 (67) 214 50 26"></label>
-          <label class="sect-10-label">Бюджет<input class="sect-10-input" type="text" name="name"
+          <label class="sect-10-label" id="sect-10-phone-label">Номер телефону<span> *</span><input class="sect-10-input" type="text" name="phone"
+              placeholder="+380 (67) 214 50 26" required></label>
+          <label class="sect-10-label">Бюджет<input class="sect-10-input" type="text" name="money"
               placeholder="20 000грн."></label>
-          <label class="sect-10-label">Email<span> *</span><input class="sect-10-input" type="email" name="email"
+          <label class="sect-10-label">Email<input class="sect-10-input" type="email" name="email"
               placeholder="darimo.sales@gmail.com"></label>
-          <label class="sect-10-label">Повідомлення <span> *</span><textarea class="sect-10-input" type="text"
-              name="name" column="1" placeholder="Опишіть вашу ідею"></textarea></label>
-          <div class="sect-10-block-submit"><button class="sect-10-submit" type="submit">відправити</button></div>
+          <label class="sect-10-label">Повідомлення<textarea class="sect-10-input" type="text"
+              name="message" column="1" placeholder="Опишіть вашу ідею"></textarea></label>
+          <div class="sect-10-block-submit"><button class="sect-10-submit disabled" type="submit" disabled5>відправити</button></div>
         </form>
       </div>
     </div>
@@ -733,23 +733,23 @@
 
   <section class="section-11" id="contacts">
     <div class="sect-11-wrapper container">
-    <div class="sect-11-wrapper-h2">
-      <h2 class="sect-11-h2 h2-common">Ми зовсім поруч!</h2>
-    </div>
+      <div class="sect-11-wrapper-h2">
+        <h2 class="sect-11-h2 h2-common">Ми зовсім поруч!</h2>
+      </div>
 
-    <div class="sect-11-map-block">
-      <div class="sect-11-map-info">
-        <div class="sect-11-map-tel">
-          <a href="" class="sect-11-tel">+380 (67) 214 50 26</a>
-          <a href="" class="sect-11-tel">+380 (67) 254 30 74</a>
+      <div class="sect-11-map-block">
+        <div class="sect-11-map-info">
+          <div class="sect-11-map-tel">
+            <a href="" class="sect-11-tel">+380 (67) 254 30 74</a>
+            <a href="" class="sect-11-tel">+380 (67) 214 50 26</a>
+          </div>
+          <div class="sect-11-map-adress">
+            <a href="" class="sect-11-email">darimo.sales@gmail.com</a>
+            <p class="sect-11-city">Україна, Київ</p>
+          </div>
         </div>
-        <div class="sect-11-map-adress">
-        <a href="" class="sect-11-email">darimo.sales@gmail.com</a>
-        <p class="sect-11-city">Україна, Київ</p>
-      </div>
       </div>
     </div>
-  </div>
   </section>
 
   <div class="header-gradient-bottom"></div>
@@ -795,7 +795,8 @@
         <div class="footer-andrew">
           <img src="img/footer-andrew.png" alt="">
         </div>
-        <a href="https://github.com/xytorenok" class="footer-authors-link" id="andrew">developed by<br>  Andrii Hutorskoi</a>
+        <a href="https://github.com/xytorenok" class="footer-authors-link" id="andrew">developed by<br> Andrii
+          Hutorskoi</a>
       </li>
     </ul>
   </footer>
