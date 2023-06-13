@@ -207,12 +207,14 @@ body {
   justify-content: flex-start;
 }
 
+/* На момент создания сайта spect-ratio не поддерживается старіми браузерами и сафари, поєтому указана высота в ручную и через spect-ratio, это позволяет сафари  */
+
 .square-1-cell {
   position: relative;
   overflow: hidden;
   max-width: 194.8px;
   width: var(--sect-1-square-cell-width);
-  /* height: 184px; */
+  height: 48%;
   border: 3px solid #636363;
   aspect-ratio: 1.0543;
   isolation: isolate;
@@ -224,6 +226,7 @@ body {
   max-width: 394.6px;
   width: calc(var(--sect-1-square-cell-width) * 2 + 5px);
   /* height: 184px; */
+  height: 48%;
   border: 3px solid #636363;
   aspect-ratio: 2.1424;
   isolation: isolate;
