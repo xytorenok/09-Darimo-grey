@@ -184,7 +184,6 @@ body {
   margin-top: 110px;
   margin-bottom: 32px;
   display: flex;
-  gap: 5px
 }
 
 .sect-1-inner-left,
@@ -201,6 +200,7 @@ body {
 
 .sect-1-inner-left {
   justify-content: flex-end;
+  margin-right: 5px;
 }
 
 .sect-1-inner-right {
