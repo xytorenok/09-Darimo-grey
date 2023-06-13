@@ -756,7 +756,7 @@ span.sect-2-sticker {
 .sect-7-block {
   margin-right: var(--sect-7-cell-margin);
   filter: grayscale(100%);
-  transition: 5000ms;
+  transition: 10000ms;
 }
 
 .sect-7-block:hover {

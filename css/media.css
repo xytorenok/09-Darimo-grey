@@ -531,7 +531,7 @@
   /* -------------------section-7------------------ */
   .sect-7-inner:first-of-type,
   .sect-7-inner:last-of-type {
-    animation: sect-7-move2 3000ms linear infinite;
+    animation: sect-7-move2 9000ms linear infinite;
   }
 
   @keyframes sect-7-move2 {
