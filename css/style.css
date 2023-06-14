@@ -207,7 +207,7 @@ body {
   justify-content: flex-start;
 }
 
-/* На момент создания сайта spect-ratio не поддерживается старіми браузерами и сафари, поєтому указана высота в ручную и через spect-ratio, это позволяет сафари  */
+/* На момент создания сайта aspect-ratio не поддерживается старыми браузерами и сафари, поєтому указана высота в ручную и через aspect-ratio. это позволяет тем кто в теме считать свойства aspect-ratio, а те кто не обновляет браузер рабаотать со свойством height */
 
 .square-1-cell {
   position: relative;
@@ -1210,6 +1210,10 @@ span.sect-2-sticker {
 
 h2.footer-h2.h2-common {
   padding: 0px 10px;
+}
+
+.footer-h2-mobile{
+  display: none;
 }
 
 .footer-link-list {
