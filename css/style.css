@@ -826,9 +826,22 @@ span.sect-2-sticker {
   height: auto;
 }
 
-.sect-8-inner-block {
+.sect-8-slide-mobile{
+
+}
+
+/* .sect-8-inner-block {
   padding: 50px 55px 0;
   height: 524px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 30px;
+} */
+
+.sect-8-inner-block {
+  padding: 40px 45px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

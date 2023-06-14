@@ -63,7 +63,7 @@ function init() {
   });
 
   // вібор стартового слайда
-  sliderLine.style.transform = `translate(-${1 * width}px)`
+  // sliderLine.style.transform = `translate(-${1 * width}px)`
   // rollSlider()
 }
 
