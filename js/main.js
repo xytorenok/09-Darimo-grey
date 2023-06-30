@@ -2,7 +2,7 @@ const humburger = document.querySelector('.humburger');
 const curtain = document.querySelector('.curtain');
 const line = document.querySelector('.sect-1-clients-line-visible');
 const sticker = document.querySelector('.square-sticker-1-tablet');
-const curtainLinks = document.querySelectorAll('.curtain-link');
+const curtainLinks = document.querySelectorAll('.menu-link');
 
 
 
@@ -39,6 +39,35 @@ function humburgerMenuAction() {
   sticker.classList.toggle('open');
 }
 
+// ---------------section-5----------------------
+
+const section = document.querySelector('.section-5');
+const line5 = document.querySelector('.sect-5-slider-line');
+const h2 = document.querySelector('.sect-5-block-h2');
+
+let square = 0
+const last = {}
+const k = 1
+
+
+
+
+
+
+
+section.addEventListener('mouseover', function (e) {
+  line5.style.transform = "translate(-12%)"
+  h2.style.transform = "translate(-200%)"
+
+  // onwheel = e => {
+  //   console.log(e);
+  //   square -= e.deltaY * 2
+  //   line5.style.transform = `translate(${square}px, 0px)`
+    
+  // }
+});
+
+
 
 // ---------------section-8----------------------
 const sliderWrapper = document.querySelector('.sect-8-slider-wrapper')
@@ -64,7 +93,7 @@ function init() {
 
   // вібор стартового слайда
   // sliderLine.style.transform = `translate(-${1 * width}px)`
-  // rollSlider()
+  rollSlider()
 }
 
 sliderBtnPrev.onclick = () => {
@@ -120,14 +149,14 @@ function validate(e) {
 
 
   if (e.target == form.phone) {
-        if (!/^\+?\d{10,15}$/.test(e.target.value)) {
+    if (!/^\+?\d{10,15}$/.test(e.target.value)) {
       e.target.parentNode.classList.add('invalid')
       submit.classList.add('disabled')
     } else {
       e.target.parentNode.classList.remove('invalid')
       submit.classList.remove('disabled')
     }
-    }
+  }
 
   // if (e.target == form.name) {
   //   // длинная запись
@@ -139,7 +168,7 @@ function validate(e) {
 
   //   // короткая запись
   //   e.target.classList.toggle('invalid', e.target.value.length < 2)
-  
+
   // }
   //  else if (e.target == form.phone) {
   //   e.target.classList.toggle('invalid', !/^(\+\d{0,5})?\d{10}$/.test(e.target.value) )
@@ -150,7 +179,7 @@ function validate(e) {
   //   console.log('message')
   // }
 
-  
+
 }
 
 // ---------------footer------------

@@ -40,7 +40,7 @@
           </ul>
         </nav>
 
-        <ul class="header-lang-list">
+        <ul class="header-lang-list" hidden>
           <li class="header-lang-item">
             <a href="" class="header-lang-link">Укр</a>
           </li>
@@ -57,29 +57,29 @@
         <span></span>
       </div>
 
-      <button class="btn header-btn">Замовити</button>
+      <a href='#order' class="btn header-btn">Замовити</a>
     </div>
   </header>
   <div class="header-gradient"></div>
   <div class="curtain">
     <ul class="curtain-list">
       <li class="curtain-item">
-        <a href="#about" class="curtain-link">Про нас</a>
+        <a href="#about" class="curtain-link menu-link">Про нас</a>
       </li>
       <li class="curtain-item">
-        <a href="#whywe" class="curtain-link">Чому ми </a>
+        <a href="#whywe" class="curtain-link menu-link">Чому ми </a>
       </li>
       <li class="curtain-item">
-        <a href="" class="curtain-link">Кейси</a>
+        <a href="" class="curtain-link menu-link">Кейси</a>
       </li>
       <li class="curtain-item">
-        <a href="#conditions" class="curtain-link">Умови роботи</a>
+        <a href="#conditions" class="curtain-link menu-link">Умови роботи</a>
       </li>
       <li class="curtain-item">
-        <a href="#contacts" class="curtain-link">Контакти</a>
+        <a href="#contacts" class="curtain-link menu-link">Контакти</a>
       </li>
       <li class="curtain-item">
-        <button class="btn curtain-btn">Замовити</button>
+        <a href='#order' class="btn curtain-btn menu-link">Замовити</a>
       </li>
     </ul>
     </nav>
@@ -120,7 +120,7 @@
         <div class="square-type-4 square-2-cells square-mt"><img src="img/sect-1-book.png" alt=""></div>
       </div>
     </div>
-    <button class="btn sect-1-btn">Замовити</button>
+    <a href='#order' class="btn sect-1-btn">Замовити</a>
     <div class="sect-1-clients-line-visible">
       <div class="sect-1-clients-line">
         <p class="sect-1-client">Xpand</p>
@@ -213,11 +213,166 @@
     <p class="sect-4-text" data-text="# Darimo враження"># Darimo враження</p>
   </section>
 
-  <section class="section-5">
-    <h2 class="h2-common" style="color:#D4B1FF">секция слайдер в разработке</р>
+  <section class="section-5" hidden>
+    <div class="sect-5-wrapper">
+      <div class="sect-5-block-h2">
+        <h2 class="sect-5-h2 h2-common">Кейси якими<br>ми пишаємось</h2>
+      </div>
+      <!-- .sect-5-slider-line>.sect-5-slide*4>p.sect-5-num+p.sect-5-title+p.sect-5-text+input[type="radio"][name="sect-5-s-1"][id="sect-5-s1-$"]*4+.sect-5-buttons>label[type="radio"][for="sect-5-s1-$"]*4^ul.sect-5-photos>li.sect-5-photo*4>img -->
+      <div class="sect-5-slider-line">
+        <div class="sect-5-slide">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-1" checked>
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-2">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-3">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-4">
+          <p class="sect-5-num">01</p>
+          <p class="sect-5-title">Genesis</p>
+          <p class="sect-5-text">Завдяки постійній співпраці з продуктовою IT компанією Genesis, ми реалізували багато яскравих кейсів та дарунків. Від ручок до Welcome паків.</p>
+          <div class="sect-5-buttons">
+            <label for="sect-5-s1-1" type="radio">
+              <img src="img/sect-5/radio-1-1.png" alt="">
+            </label>
+            <label for="sect-5-s1-2" type="radio">
+              <img src="img/sect-5/radio-1-2.png" alt="">
+            </label>
+            <label for="sect-5-s1-3" type="radio">
+              <img src="img/sect-5/radio-1-3.png" alt="">
+            </label>
+            <label for="sect-5-s1-4" type="radio">
+              <img src="img/sect-5/radio-1-4.png" alt="">
+            </label>
+          </div>
+          <ul class="sect-5-photos">
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-1.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-2.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-3.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-4.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="sect-5-slide">
+          <input type="radio" name="sect-5-s-2" id="sect-5-s2-1" checked>
+          <input type="radio" name="sect-5-s-2" id="sect-5-s2-2">
+          <input type="radio" name="sect-5-s-2" id="sect-5-s2-3">
+          <input type="radio" name="sect-5-s-2" id="sect-5-s2-4">
+          <p class="sect-5-num">02</p>
+          <p class="sect-5-title">Inventor</p>
+          <p class="sect-5-text">Для компанії Inventor ми зробили безліч неймовірно крутих та яскравих дарунків, які радували дітей яскравим дизайном.</p>
+          <div class="sect-5-buttons">
+            <label for="sect-5-s2-1" type="radio">
+              <img src="img/sect-5/radio-1-1.png" alt="">
+            </label>
+            <label for="sect-5-s2-2" type="radio">
+              <img src="img/sect-5/radio-1-2.png" alt="">
+            </label>
+            <label for="sect-5-s2-3" type="radio">
+              <img src="img/sect-5/radio-1-3.png" alt="">
+            </label>
+            <label for="sect-5-s2-4" type="radio">
+              <img src="img/sect-5/radio-1-4.png" alt="">
+            </label>
+          </div>
+          <ul class="sect-5-photos">
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-1.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-2.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-3.png" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="img/sect-5/main-1-4.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="sect-5-slide">
+          <p class="sect-5-num">03</p>
+          <p class="sect-5-title">Karcher</p>
+          <p class="sect-5-text">Компанії Karcher ми допомогли привітати партнерів з Новим роком, а також забезпечили компанію дарунками для різних івентів.</p>
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-1">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-2">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-3">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-4">
+          <div class="sect-5-buttons">
+            <label for="sect-5-s1-1" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-2" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-3" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-4" type="radio">
+              <img src="" alt="">
+            </label>
+          </div>
+          <ul class="sect-5-photos">
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="sect-5-slide">
+          <p class="sect-5-num">04</p>
+          <p class="sect-5-title">Terra Food</p>
+          <p class="sect-5-text">Завжди цікаво працювати з компанією Terra Food та втілювали в життя запити «зробіть щось ВАУ».</p>
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-1">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-2">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-3">
+          <input type="radio" name="sect-5-s-1" id="sect-5-s1-4">
+          <div class="sect-5-buttons">
+            <label for="sect-5-s1-1" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-2" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-3" type="radio">
+              <img src="" alt="">
+            </label>
+            <label for="sect-5-s1-4" type="radio">
+              <img src="" alt="">
+            </label>
+          </div>
+          <ul class="sect-5-photos">
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+            <li class="sect-5-photo">
+              <img src="" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="section-6"  id="conditions">
+  <section class="section-6" id="conditions">
     <div class="sect-6-wrapper-h2">
       <h2 class="sect-6-h2 h2-common">Як ми працюємо</h2>
       <span class="sect-6-sticker-center">4 простих кроки</span>
@@ -369,10 +524,14 @@
               <div class="sect-8-inner-logo"><img src="img/sect-8-logo-3.png" alt=""></div>
             </div>
           </div>
-          <div class="sect-8-slide sect-8-slide-mobile">
+          <div class="sect-8-slide">
             <div class="sect-8-inner-block">
               <div class="sect-8-inner-photo"><img src="img/sect-8-name-3.png" alt=""></div>
-              <div class="sect-8-inner-comment">Шукала компанію постачальника, яка змогла б почути наші потреби та запит, вони були доволі незвичні. Однак розуміння, а головне неперевершена швидкість та чіткість мене вразила. Буде зайве говорити, що я та співробітники задоволені якістю подарунків які для нас надали. Коли я бачу їх у щоденному використання співробітниками, розумію, що не помилилася постачальником, повернусь ще не один раз. Рекомендую.
+              <div class="sect-8-inner-comment">Шукала компанію постачальника, яка змогла б почути наші потреби та
+                запит, вони були доволі незвичні. Однак розуміння, а головне неперевершена швидкість та чіткість мене
+                вразила. Буде зайве говорити, що я та співробітники задоволені якістю подарунків які для нас надали.
+                Коли я бачу їх у щоденному використання співробітниками, розумію, що не помилилася постачальником,
+                повернусь ще не один раз. Рекомендую.
               </div>
               <div class="sect-8-inner-name">Дівчина</div>
               <div class="sect-8-inner-position">Керівник відділу маркетингу ТОВ «Керхер» в Україні,</div>
@@ -713,7 +872,7 @@
     </div>
   </section>
 
-  <section class="section-10">
+  <section class="section-10" id="order">
     <div class="container section-10-container">
       <div class="sect-10-wrapper">
         <div class="sect-10-logo">
@@ -727,15 +886,16 @@
               placeholder="Лариса"></label>
           <label class="sect-10-label">Назва компанії<input class="sect-10-input" type="text" name="company"
               placeholder="Darimo"></label>
-          <label class="sect-10-label" id="sect-10-phone-label">Номер телефону<span> *</span><input class="sect-10-input" type="text" name="phone"
-              placeholder="+380 (67) 214 50 26" required></label>
+          <label class="sect-10-label" id="sect-10-phone-label">Номер телефону<span> *</span><input
+              class="sect-10-input" type="text" name="phone" placeholder="+380 (67) 214 50 26" required></label>
           <label class="sect-10-label">Бюджет<input class="sect-10-input" type="text" name="money"
               placeholder="20 000грн."></label>
           <label class="sect-10-label">Email<input class="sect-10-input" type="email" name="email"
               placeholder="darimo.sales@gmail.com"></label>
-          <label class="sect-10-label">Повідомлення<textarea class="sect-10-input" type="text"
-              name="message" column="1" placeholder="Опишіть вашу ідею"></textarea></label>
-          <div class="sect-10-block-submit"><button class="sect-10-submit disabled" type="submit" disabled5>відправити</button></div>
+          <label class="sect-10-label">Повідомлення<textarea class="sect-10-input" type="text" name="message" column="1"
+              placeholder="Опишіть вашу ідею"></textarea></label>
+          <div class="sect-10-block-submit"><button class="sect-10-submit disabled" type="submit"
+              disabled5>відправити</button></div>
         </form>
       </div>
     </div>
