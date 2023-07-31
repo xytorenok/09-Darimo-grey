@@ -63,7 +63,7 @@ section.addEventListener('mouseover', function (e) {
   //   console.log(e);
   //   square -= e.deltaY * 2
   //   line5.style.transform = `translate(${square}px, 0px)`
-    
+
   // }
 });
 
@@ -182,6 +182,25 @@ function validate(e) {
 
 }
 
+form.onsubmit = () => {
+
+
+  const formData = Object.fromEntries(new FormData(form))
+
+  const text = `Ім'я: ${formData.name}\nТелефон: ${formData.phone}`
+
+  // const text = JSON.stringify(formData)
+
+  // const url = `${baseUrl}/${method}?chat_id=${chatId}&text=${text}`;
+
+  // fetch(url)
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(error => console.error(error));
+
+  fetch(`${baseUrl}/${method}`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ chat_id, text }) })
+}
+
 // ---------------footer------------
 
 andrew.addEventListener("click", function (e) {
@@ -191,3 +210,17 @@ andrew.addEventListener("click", function (e) {
     window.location.href = e.target.href
   }, 1000)
 })
+
+
+
+
+const token = '6300826819:AAGQJEqFloVvQpyRzVsT4JmO-8tvn0jLGO4'
+
+const chat_id = -923822539
+
+
+
+const baseUrl = `https://api.telegram.org/bot${token}`;
+
+const method = 'sendMessage';
+

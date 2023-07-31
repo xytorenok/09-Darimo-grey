@@ -392,7 +392,7 @@
     margin-top: 10px;
   }
 
-  #sect-10-phone-label input{
+  #sect-10-phone-label input {
     padding: 15px 12px;
   }
 
@@ -422,8 +422,22 @@
 
   /* ---------------------common--------------------- */
 
-  .header-menu-links-lang {
+  .header-list {
     display: none;
+  }
+
+  .header-social-list {
+    height: 40px;
+    position: absolute;
+    right: 60px;
+  }
+
+  .header-social-item {
+    margin: 0 10px;
+  }
+
+  .header-social-link img {
+    width: 40px;
   }
 
   .humburger {
@@ -522,7 +536,7 @@
     top: -35px;
     left: auto;
     right: 0px;
-    background: #D4B1FF!important;
+    background: #D4B1FF !important;
     transform: rotate(24deg);
   }
 
@@ -758,6 +772,7 @@
     transform: scale(0.6);
     margin-right: -30px;
   }
+
   /* --------------section-9----- */
 
   .section-9 {
@@ -775,7 +790,7 @@
     0% {
       transform: translateX(-50px);
     }
-  
+
     100% {
       transform: translateX(-900px);
     }
@@ -924,11 +939,11 @@
     padding-bottom: 64px;
   }
 
-  .footer-h2-mobile{
+  .footer-h2-mobile {
     display: block;
   }
 
-  .footer-h2{
+  .footer-h2 {
     display: none;
   }
 
@@ -964,7 +979,7 @@
   }
 
   .footer-authors-item:last-of-type:hover .footer-andrew {
-    animation: footerAndrewUp 3000ms linear ;
+    animation: footerAndrewUp 3000ms linear;
   }
 
   .footer-andrew {
@@ -978,7 +993,7 @@
     0% {
       transform: translateY(40%);
     }
-  
+
     50% {
       transform: translateY(-100%);
     }
@@ -1060,6 +1075,7 @@
 }
 
 @media (max-width: 360px) {
+
   /* ------------section-4------------ */
   .sect-4-text {
     font-size: 45px;
